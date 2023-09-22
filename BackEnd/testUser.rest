@@ -1,0 +1,38 @@
+
+POST http://localhost:4000/api/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MGI5NDg3ZDg4YzBmMGZlYzU4NWNkOCIsImlhdCI6MTY5NTM5MTUwOSwiZXhwIjoxNjk1NDc3OTA5fQ.nWY_XA_sF9V28OS10QFvMfoNA4v5RZww2GX3suau2gQ
+
+{
+    "name":"nathnael",
+    "email":"NathnaelAbera35@gmail.com",
+    "password":"12345678"
+    
+}
+###
+DELETE  http://localhost:4000/api/users/650d9f8d235f74a1e1f4d414
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MGI5NDg3ZDg4YzBmMGZlYzU4NWNkOCIsImlhdCI6MTY5NTM5MTUwOSwiZXhwIjoxNjk1NDc3OTA5fQ.nWY_XA_sF9V28OS10QFvMfoNA4v5RZww2GX3suau2gQ
+
+###
+PUT  http://localhost:4000/api/users/650d9f8d235f74a1e1f4d414
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MGI5NDg3ZDg4YzBmMGZlYzU4NWNkOCIsImlhdCI6MTY5NTM5MTUwOSwiZXhwIjoxNjk1NDc3OTA5fQ.nWY_XA_sF9V28OS10QFvMfoNA4v5RZww2GX3suau2gQ
+
+{
+    "Role":"admin"
+}
+
+###
+POST http://localhost:4000/api/users/login
+Content-Type: application/json
+
+{
+    "email":"NathnaelAbera1@gmail.com",
+    "password":"12345678"
+}
+###
+
+GET http://localhost:4000/api/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MGQ5ZjhkMjM1Zjc0YTFlMWY0ZDQxNCIsImlhdCI6MTY5NTM5MTYyOSwiZXhwIjoxNjk1NDc4MDI5fQ.qBDl4czPzzccJQxlMOgSmJqNZJYS3xR4w6pzqlpfqF0
+###
+GET http://localhost:4000/api/users/all

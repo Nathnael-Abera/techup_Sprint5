@@ -1,0 +1,67 @@
+
+GET http://localhost:4000/api/jobdata
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MGI5NDg3ZDg4YzBmMGZlYzU4NWNkOCIsImlhdCI6MTY5NTM5MTUwOSwiZXhwIjoxNjk1NDc3OTA5fQ.nWY_XA_sF9V28OS10QFvMfoNA4v5RZww2GX3suau2gQ
+
+
+###
+
+GET http://localhost:4000/api/jobdata/64fa02ade832fce381d921fc
+
+###
+
+GET http://localhost:4000/api/jobdata?perPage=5&page=3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MGI5NDg3ZDg4YzBmMGZlYzU4NWNkOCIsImlhdCI6MTY5NTM5MTUwOSwiZXhwIjoxNjk1NDc3OTA5fQ.nWY_XA_sF9V28OS10QFvMfoNA4v5RZww2GX3suau2gQ
+
+###
+
+GET http://localhost:4000/api/jobdata/sort
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MGI5NDg3ZDg4YzBmMGZlYzU4NWNkOCIsImlhdCI6MTY5NTM5MTUwOSwiZXhwIjoxNjk1NDc3OTA5fQ.nWY_XA_sF9V28OS10QFvMfoNA4v5RZww2GX3suau2gQ
+###
+
+GET http://localhost:4000/api/jobdata/sortdate
+
+###
+
+GET http://localhost:4000/api/jobdata/filter?location=Worldwide
+###
+
+GET http://localhost:4000/api/jobdata/filter?company=Photosnap
+###
+
+GET http://localhost:4000/api/jobdata/filter?role=Frontend
+###
+
+
+POST http://localhost:4000/api/jobdata
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MGI5NDg3ZDg4YzBmMGZlYzU4NWNkOCIsImlhdCI6MTY5NTM5MTUwOSwiZXhwIjoxNjk1NDc3OTA5fQ.nWY_XA_sF9V28OS10QFvMfoNA4v5RZww2GX3suau2gQ
+Content-Type: application/json
+
+  {
+    "company": "job  ",
+    "logo": "./images/photosnap.svg",
+    "new": true,
+    "featured": true,
+    "position": "Senior Frontend Developer",
+    "role": "Frontend",
+    "level": "Senior",
+    "postedAt": "1d ago",
+    "contract": "Full Time",
+    "location": "USA Only",
+    "languages": ["HTML", "CSS", "JavaScript"],
+    "tools": []
+  }
+
+###
+PUT  http://localhost:4000/api/jobdata/650da106d110c46b4067a418
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MGI5NDg3ZDg4YzBmMGZlYzU4NWNkOCIsImlhdCI6MTY5NTM5MjEwMCwiZXhwIjoxNjk1NDc4NTAwfQ.Xrsxr1XQs8LhHmspX2X5JGemrcpPzMJcqCctyAStpq4
+
+  {
+    "company": "The Air Filter "
+  }
+
+###
+
+DELETE http://localhost:4000/api/jobdata/650da106d110c46b4067a418
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MGI5NDg3ZDg4YzBmMGZlYzU4NWNkOCIsImlhdCI6MTY5NTM5MjEwMCwiZXhwIjoxNjk1NDc4NTAwfQ.Xrsxr1XQs8LhHmspX2X5JGemrcpPzMJcqCctyAStpq4
+###

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  onsubmit="handelSubmit">
+        <label for="">name</label>
+        <input type="text" name="name" placeholder="enter name">
+        <label for="">email</label>
+        <input type="text" name="email" placeholder="enter email">
+        <label for="">password</label>
+        <input type="text" name="password" placeholder="enter password">
+        <label for="">role</label>
+        <input type="text" name="name" placeholder="enter name">
+        <button>register</button>
+    </form>
+</body>
+<script>
+    const handelSubmit = (e)=>{
+        e.preventDefault()
+    const response =  fetch(" http://localhost:4000/api/users", {
+    method: "POST", // *GET, POST, PUT, DELETE, etc.
+    mode: "cors", // no-cors, *cors, same-origin
+    cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: "same-origin", // include, *same-origin, omit
+    headers: {
+      "Content-Type": "application/json",
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    })}
+</script>
+</html>
